@@ -10,7 +10,7 @@ func TestFizzBuzz(t *testing.T) {
 	expected := []string{
 		"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz",
 	}
-	actual := fizzbuzz.Do(15)
+	actual := fizzbuzz.Do(1, 15)
 	if len(expected) != len(actual) {
 		t.Errorf("len(fizzbuzz.Do()) = %d, want %d", len(actual), len(expected))
 	}

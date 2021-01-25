@@ -3,9 +3,9 @@ package fizzbuzz
 import "strconv"
 
 // Do gets output of FizzBuzz algorithm from 1-15 inclusive
-func Do(n int) []string {
+func Do(low, high int) []string {
 	var out []string
-	for i := 1; i <= n; i++ {
+	for i := low; i <= high; i++ {
 		s := ""
 		if i%3 == 0 {
 			s += "Fizz"
